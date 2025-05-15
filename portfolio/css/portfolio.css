@@ -1,0 +1,409 @@
+/*APPLIES TO ALL PAGES*/
+.wrapper {
+    display: grid;
+    grid-template-rows: min-content min-content 1fr min-content;
+    grid-template-columns: auto;
+    min-height: 100vh;
+}
+
+header {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    
+    background-color: #B0C6D9;
+    font-family: "Signika", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
+}
+
+footer {
+    grid-row: 4/5;
+    grid-column: 1/2;
+
+    color: #c2d8e4;
+    text-align: center;
+    background-color: #4C5D4A;
+    font-family: "Signika", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #c2d8e4;
+}
+
+.head {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 5fr
+}
+
+/*Name in header*/ header h2 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+    text-align: left;
+    padding: 15px;
+    margin: 1rem;
+    font-family: "Sansation", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
+    font-size: 32px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #405173;
+}
+
+/*NAVIGATION BAR*/
+nav li {
+    list-style-type: none;
+    margin: 1rem;
+    text-align: right;
+    background-color: #252837;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav ul {
+    grid-row: 1/2;
+    grid-column: 2/3;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 15px;
+}
+
+/*HOME*/
+/*background image in body, encompasses header, main, and footer*/
+
+.homemain {
+    grid-row: 2/4;
+}
+
+.homebody {
+    background-image: url("../images/lavender-mountain.jpg");
+    margin: 0;
+}
+
+.tagline {
+    padding: 30px;
+    margin: 3rem;
+}
+
+.tagline h1 {
+    text-align: center;
+    color: white;
+    
+    font-family: "Sansation", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
+    font-size: 48pt;
+}
+
+/*Link to HTML/CSS Exercises*/
+.tagline h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tagline a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.tagline h2 {
+    font-size: 24pt;
+    text-align: center;
+    color: white;
+    
+    font-family: "Sansation", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*RESUME*/
+.resumebody {
+    margin: 0;
+}
+.resumemain {
+    grid-row: 2/4;
+    grid-column: 1/2;
+
+    background-color: #7686A6;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+    display: grid;
+    grid-template-rows: 20px min-content 20px;
+    grid-template-columns: 1fr 3fr 1fr
+}
+
+.rmaincontent {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    
+    filter: drop-shadow(10px 10px 4px #4C566B);
+    padding: 3rem;
+    background-color: white;
+    line-height: 1.5rem;
+}
+
+.rmaincontent h1 {
+    text-align: center;
+    font-size: 36px;
+
+    font-family: "Signika", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
+}
+
+.rmaincontent h2 {
+    color: #5C578F;
+}
+
+.rmaincontent a:link {
+    color: #66358F;
+}
+
+.rmaincontent a:visited {
+    color: #405173;
+}
+
+.rmaincontent a:hover {
+    color:#B697F0;
+}
+
+/*PORTFOLIO*/
+div.smaller-head {
+    background-color: #7f9a94;
+}
+
+div.smaller-head h1 {
+    grid-row: 2/3;
+
+    color: #142601;
+    text-align: center;
+    padding: 1rem;
+    font-family: "Signika", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
+    font-size: 36px;
+}
+
+main.portfolio {
+    grid-row: 3/4;
+    grid-column: 1/2;
+
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, 30rem);
+
+    justify-content: center;
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.portfolio {
+    background-color: white;
+    display: flex; /* makes this div into a flex container */ 
+    flex-direction: column; /* When the div.portfolio box grows, any extra space is distributed below the p text. */
+    padding: 2rem;
+    margin: 1rem;
+
+    filter: drop-shadow(10px 10px 4px #4C566B);
+    background-color: white;
+}
+
+.portfoliobody {
+    margin: 0;
+    background-color: #7f9a94;
+}
+
+.portfolio h2 {
+    color: #3E435C;
+    font-family: "Signika", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
+}
+
+.portfolio p {
+    line-height: 1.5rem;
+}
+
+.portfolio a:link {
+    color: #66358F;
+}
+
+.portfolio a:visited {
+    color: #405173;
+}
+
+.portfolio a:hover {
+    color:#B697F0;
+}
+
+/*ABOUT PAGE*/
+.aboutbody {
+    margin: 0;
+}
+
+main.about {
+    grid-row: 3/4;
+
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+    grid-template-columns: 15px auto 15px;
+
+    background-color: #8576A6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutcontent {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 35rem));
+
+    justify-content: center;    
+    margin: 0;
+}
+
+.aboutpic {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutpic img {
+    max-height: 604px;
+    max-width: 483px;
+
+    filter: drop-shadow(10px 10px 4px #5A5070);
+}
+
+.bio {
+    display: flex; 
+    flex-direction: column; 
+
+    background-color: white;
+    margin: auto;
+    padding: 2rem;
+    filter: drop-shadow(10px 10px 4px #5A5070);
+    background-color: white;
+}
+
+.bio h1, .bio h2 {
+    font-family: "Signika", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
+}
+
+.bio h1 {
+    text-align: center;
+    font-size: 36px;
+    color: black;
+}
+
+.bio h2 {
+    color: #3E435C;
+}
+
+.bio p {
+    line-height: 1.5rem;
+}
+
+/*CONTACT PAGE*/
+.contactmain {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr
+}
+
+.contact {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: #C9D9E8;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: grid;
+    grid-template-columns: min-content min-content;
+}
+
+figure {
+    grid-column: 1/2;
+    margin: 2rem;
+}
+
+figcaption {
+    font-size: 14px;
+    margin: 1rem;
+}
+
+.dogphoto {
+    margin: 1rem;
+}
+
+.contactinfo {
+    grid-column: 2/3;
+    margin: 2rem;   
+}
+
+.contactinfo a:link {
+    color: #66358F;
+}
+
+.contactinfo a:visited {
+    color: #405173;
+}
+
+.contactinfo a:hover {
+    color:#B697F0;
+}
+
+.contactinfo h1 {
+    font-family: "Signika", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
+}
+
+.dogphoto {
+    float: left;
+}
+
+
+
